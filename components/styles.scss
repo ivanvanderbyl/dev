@@ -1,0 +1,47 @@
+@import '@material/typography/mdc-typography.scss';
+
+:root {
+  --brand-primary-color: #ffab00;
+  --breakpoint: 1280px;
+
+  --tricentisBlue: rgb(29, 99, 175);
+  --digitalocean: rgb(0, 105, 255);
+  --band1background: rgba(212, 92, 126, 0.2);
+  --band2background: rgba(168, 79, 113, 0.2);
+  --band3background: rgba(69, 65, 92, 0.2);
+  --band4background: rgba(220, 123, 40, 0.2);
+  --band5background: rgba(201, 83, 62, 0.2);
+}
+
+html,
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: 'liga' on;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 16px;
+  line-height: 1.4;
+
+  box-sizing: border-box;
+}
+
+span.highlight {
+  background-color: rgba($color: var(--brand-primary-color), $alpha: 0.5);
+}
+
+a {
+  // color: currentColor;
+  &:hover {
+    text-decoration: underline;
+  }
+}

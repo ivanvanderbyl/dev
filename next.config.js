@@ -1,4 +1,11 @@
-const withTypescript = require("@zeit/next-typescript");
-module.exports = withTypescript({
-  target: "serverless"
-});
+const withSass = require('@zeit/next-sass')
+const withTypescript = require('@zeit/next-typescript')
+
+module.exports = withTypescript(
+  withSass({
+    target: 'serverless',
+    sassLoaderOptions: {
+      includePaths: ['./node_modules'],
+    },
+  }),
+)
